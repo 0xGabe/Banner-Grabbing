@@ -5,7 +5,7 @@ def prPink(skk): print("\033[95m {}\033[00m" .format(skk))
 def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
 def prPurple(skk): print("\033[95m{}\033[00m" .format(skk))
 
-prPink(""""                                                         
+prPink("""                                                         
  _______  _______  __    _  __    _  _______  ______          _______  __   __ 
 |  _    ||   _   ||  |  | ||  |  | ||       ||    _ |        |       ||  | |  |
 | |_|   ||  |_|  ||   |_| ||   |_| ||    ___||   | ||        |    _  ||  |_|  |
