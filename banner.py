@@ -3,6 +3,7 @@ import socket
 
 def prPink(skk): print("\033[95m {}\033[00m" .format(skk))
 def prRed(skk): print("\033[91m {}\033[00m" .format(skk))
+def prPurple(skk): print("\033[95m{}\033[00m" .format(skk))
 
 prPink(""""                                                         
  _______  _______  __    _  __    _  _______  ______          _______  __   __ 
@@ -14,7 +15,7 @@ prPink(""""
 |_______||__| |__||_|  |__||_|  |__||_______||___|  |_||___| |___|      |___|            
 """)
 
-if len(sys.argv) < 2 | len(sys.argv) > 2:
+if len(sys.argv) != 3:
     prRed("[-] How to use -> python3 10.0.0.10 22")
 else:
     ip = sys.argv[1]
@@ -24,4 +25,5 @@ else:
     mysocket.connect((ip,int(port)))
     banner = mysocket.recv(1024)
 
+    prPurple("[i] Server Banner")
     print(banner)
